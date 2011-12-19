@@ -1,0 +1,22 @@
+--------------------
+2011-12-19
+
+Google Base Feed Parser
+
+This will take a products feed and convert it to an array for use however you see fit.
+
+You can pick and choose which fields it will put into the array
+
+example usage:
+
+$feed = new GoogleBaseFeedParser( 'http://www.domain.com/googlebasefeed.xml' );
+$fields = array( 'title','link','description','id','brand','image_link','model_number','google_product_category','price' );
+$feed->setFieldsToRetrieve( $fields );		
+$results = $feed->getFeedResults();								
+
+foreach ( $results as $result ) {
+	echo "<strong>" . $result['title'] . "</strong><br>";
+	echo $result['description'] . "<br><br>";
+	
+}
+--------------------
