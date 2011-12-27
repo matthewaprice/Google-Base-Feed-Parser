@@ -75,7 +75,7 @@ class GoogleBaseFeedParser {
 	 * getFeedResults()
 	 * uses private function loadFeed();
 	 * takes the feed and iterates through the <entry>s
-	 * builds an array of just the pieces necessary to create a product in the noodle
+	 * builds an array of just the pieces necessary 
 	 */
 	public function getFeedResults() {
 		
