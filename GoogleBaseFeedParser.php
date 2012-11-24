@@ -62,7 +62,6 @@ class GoogleBaseFeedParser {
 
 	/*
 	 * setFieldsToRetrieve()
-	 * @var $parent_store_service - an array of fields to retrieve from the google base field
 	 * the fields are named the same as their names in one "<entry>" in the feed
 	 */
 	public function setFieldsToRetrieve( $fields ) {
